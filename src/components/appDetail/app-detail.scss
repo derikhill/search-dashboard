@@ -1,0 +1,82 @@
+@import '../../sass/base';
+
+.app-detail-title {
+  background-color: $white;
+  margin: 2em;
+  padding-top: 1em;
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+
+  &.sidebar-closed {
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    width: calc(100vw - 140px);
+  }
+
+  h4 {
+    margin-bottom: 1.5em;
+  }
+
+  h5 {
+    border-bottom: 1px solid $title-color;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .greenbtn {
+    padding: 0.8em 1em;
+    margin-top: 1.75em;
+  }
+
+  #info-message {
+    margin: 2em auto
+  }
+}
+
+.app-quick-details {
+  margin-top: 2em;
+
+  h6 {
+    font-weight: bold;
+
+    span {
+      font-weight: normal;
+    }
+  } 
+}
+
+.app-details {
+  margin-top: 1em;
+
+  table {
+    white-space: normal;
+  }
+
+  .section-title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  td {
+    font-size: 0.85em;
+    width: 35%;
+  }
+
+  .app-field-name {
+    width: 15%;
+    background-color: #F7F7F7;
+    margin-left: 0;
+  }
+
+  // .comments-row {
+  //   width: 85%;
+  // }
+}

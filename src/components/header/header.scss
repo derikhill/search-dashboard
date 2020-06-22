@@ -1,0 +1,32 @@
+@import '../../sass/base';
+
+  header {
+    position: sticky;
+    position: --webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    
+    .top-bar {
+      background-color: $ul-red;
+      padding: 1em;
+
+      .top-bar-left a {
+        color: $white;
+      }
+
+      img {
+        height: 2.5em; 
+        width: 3em; 
+        margin-right: 1em;
+        fill: $white;
+      }
+      
+      .top-bar-right {
+        margin-right: 1.5em
+      }
+
+      h6, span {
+        color: $white;
+      }
+    }
+}

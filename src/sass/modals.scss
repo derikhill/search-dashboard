@@ -1,0 +1,74 @@
+@import 'base';
+
+.reveal {
+  padding: 0;
+}
+
+.modal_title {
+  background-color: $ul-red;
+  text-align: center;
+  color: $white;
+  padding: 0.2em;
+
+  h5 {
+    color: $white;
+  }
+}
+
+.close-button {
+  top: 0;
+  color: $white;
+}
+
+.before {
+  padding: 3em;
+}
+
+.edit-form {
+  padding: 1rem 1rem 0;
+}
+
+#address_edit {
+  line-height: 1.3;
+  margin-bottom: 1.05em;
+}
+
+#loginForm {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.after {
+  border-top: 1px solid #e1e1e1;
+}
+
+.close-div {
+  position: absolute;
+  color: #8a8a8a;
+  cursor: pointer;
+  right: 2.2rem;
+  font-size: 2em;
+  line-height: 1;
+  padding-top: 0.5rem;
+}
+
+[data-whatinput='mouse'] .close-div {
+  outline: 0;
+}
+
+.close-div:hover,
+.close-div:focus {
+  color: #0a0a0a;
+}
+
+.loading {
+  height: 3em;
+  margin-top: 20%;
+}
+
+#disposition-modal-body {
+
+  td {
+    font-size: 0.8rem;
+  }
+}

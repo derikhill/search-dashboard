@@ -1,0 +1,85 @@
+@import '../../sass/base';
+
+.search-apps-title {
+  background-color: $white;
+  margin: 2em;
+  padding-top: 1em;
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+
+  h5 {
+    border-bottom: 1px solid $title-color;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  &.sidebar-closed {
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    width: calc(100vw - 140px);
+  }
+
+}
+.search-apps.is-showing {
+  height: 0;
+  overflow: hidden;
+  transition: height 1500ms ease-in-out;
+  -webkit-transition: height 1500ms ease-in-out;
+  -moz-transition: height 1500ms ease-in-out;
+  -ms-transition: height 1500ms ease-in-out;
+  -o-transition: height 1500ms ease-in-out;
+}
+
+.search-apps .greenbtn {
+  padding: 0.8em 1em;
+  margin-top: 1.75em;
+}
+
+.expander {
+  margin-left: 2em;
+  cursor: pointer;
+  top: -2em;
+
+  img {
+    height: 2em;
+
+    &.is-active {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+    }
+
+    &.is-collapsed {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      margin-top: -0.75em;
+      margin-right: 0.75em;
+    }
+  }
+}
+
+#search-results-table {
+  height: 675px;
+  min-width:calc(100% - 30px);
+  margin-bottom: 2em;
+  display:none
+}
+
+.projectAppDetail,
+.printAppDetail {
+  padding-right: 0.5em;
+  cursor: pointer;
+}

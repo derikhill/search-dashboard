@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Softlines Independent Test Request</title>
+
+</head>
+
+<body>
+  <header class="grid-x print-header align-spaced sticky">
+    <button class="button medium-1 hide-for-print" onclick="window.close()">Return</button>
+    <img src="../../images/ul-red.svg">
+    <h4 class="text-center" id="form-name">Softlines Independent Test Request</h4>
+    <img alt="barcode" id="barcode" />
+  </header>
+
+  <h2 id="express" class="text-center expresshd"></h2>
+  <table class="top-Table center unstriped">
+    <caption style="font-weight: bold;">
+      SEND SAMPLES TO
+    </caption>
+    <tbody id="table-data">
+      <tr>
+        <td colspan="8" class="address-table">
+          <table class="align-center">
+            <tbody>
+              <tr id="addressRow"></tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <!-- SUPPLIER INFORMATION -->
+      <tr class="tr-title">
+        <td colspan="8">
+          <div class="grid-x">
+            <div class="cell section-div">
+              <p class="section-number">1</p>
+              <p class="section-title">APPLICANT INFORMATION</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class='text-right print-table-title'>Company Name</td>
+        <td colspan='3' id="supplier_name"></td>
+        <td class='text-right print-table-title'>Client</td>
+        <td colspan='3' id="client"></td>
+      </tr>
+      <tr>
+        <td class='text-right print-table-title'>Contact Name</td>
+        <td colspan='3' id="supplier_attn"></td>
+        <td class='text-right print-table-title'>Email Address</td>
+        <td colspan='3' id="supplier_email_address"></td>
+      </tr>
+      <!-- ITEM INFORMATION -->
+      <tr class="tr-title">
+        <td colspan="8">
+          <div class="grid-x">
+            <div class="cell section-div">
+              <p class="section-number">2</p>
+              <p class="section-title">ITEM INFORMATION</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-right print-table-title">Name:</td>
+        <td colspan="7" style="max-width: 12.5%;word-wrap: break-word;" id="sample_description"></td>
+      </tr>
+      <tr>
+        <th class="text-right print-table-title" style="border: none;">Style/Model Number</th>
+        <td style='border: none;' id="model_style_number"></td>
+        <th class="text-right print-table-title" style="border: none;">UPC Number</th>
+        <td id="upc_number"></td>
+        <th class="text-right print-table-title" style="border: none;">PO Number</th>
+        <td id="po_number"></td>
+        <th class="text-right print-table-title" style="border: none;">Size(s)</th>
+        <td id="size"></td>
+      </tr>
+      <tr>
+        <th class="text-right print-table-title" style="border: none;">Color/Pattern Number</th>
+        <td id="color_number"></td>
+        <th class="text-right print-table-title" style="border: none;">Manufacturer</th>
+        <td id="factory_name"></td>
+        <th class="text-right print-table-title" style="border: none;">Country of Origin</th>
+        <td id="country_of_origin"></td>
+        <th class="text-right print-table-title" style="border: none;">Retailer Name</th>
+        <td id="retailer"></td>
+      </tr>
+      <tr>
+        <th class="text-right print-table-title" style="border: none;">Intended Market</th>
+        <td id="client_country"></td>
+        <th class="text-right print-table-title" style="border: none;">Fiber Content</th>
+        <td id="fiber_content"></td>
+        <th class="text-right print-table-title" style="border: none;">Labeled Care Instructions</th>
+        <td id="labeled_care_instructions" colspan="3"></td>
+      </tr>
+      <tr style="border-top: 2px solid #CCC;">
+        <th style="border: none;">Return Sample(s)</th>
+        <td id="return_samples">No</td>
+        <th class="text-right print-table-title" style="border: none;">Courier Name</th>
+        <td id="courier_name">n/a</td>
+        <th class="text-right print-table-title" style="border: none;">Courier Number</th>
+        <td id="courier_number">n/a</td>
+      </tr>
+      <!-- TEST TYPE -->
+      <tr class="tr-title">
+        <td colspan="8">
+          <div class="grid-x">
+            <div class="cell section-div">
+              <p class="section-number">3</p>
+              <p class="section-title">TESTING OPTIONS</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-right print-table-title width-percent">Previous Report Number</td>
+        <td class="width-percent" style="border-right-style: none;" colspan="3" id="previous_1"></td>
+        <td class="width-percent text-right print-table-title">Other Test Method</td>
+        <td class="width-percent" colspan="3" id="other_test_method"></td>
+      </tr>
+      <tr>
+        <td class="width-percent text-right print-table-title">Packages</td>
+        <td colspan="3" id="packages"></td>
+        <td class="width-percent text-right print-table-title">Single Tests</td>
+        <td colspan="3" id="single_tests"></td>
+      </tr>
+      <tr>
+        <td class="width-percent text-right print-table-title">CPSIA</td>
+        <td colspan="3" id="cpsia"></td>
+        <td class="width-percent text-right print-table-title">Chemical / Analytical</td>
+        <td colspan="3" id="chemical_analytical"></td>
+      </tr>
+      <!-- CONTACT INFO -->
+      <tr class="tr-title">
+        <td colspan="8">
+          <div class="grid-x">
+            <div class="cell section-div">
+              <p class="section-number">4</p>
+              <p class="section-title">CONTACT</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-right print-table-title">Sample Received Notification</td>
+        <td colspan="3" id="receipt_notification_receive_email"></td>
+        <td class="text-right print-table-title">Send Report To</td>
+        <td colspan="3" id="report_receive_email"></td>
+      </tr>
+      <!-- BILLING INFO -->
+      <tr class="tr-title">
+        <td colspan="8">
+          <div class="grid-x">
+            <div class="cell section-div">
+              <p class="section-number">5</p>
+              <p class="section-title">BILLING INFORMATION</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-right print-table-title">Company Name</td>
+        <td colspan="3" id="billing_company_name"></td>
+        <td class="text-right print-table-title">Attention</td>
+        <td colspan="3" id="billing_attn"></td>
+      </tr>
+      <tr>
+        <td class="text-right print-table-title" rowspan="3">Address</td>
+        <td colspan="3" rowspan="3"><span id="billing_address_1"></span><br><span
+            id="billing_address_city_state_zip"></span><br></td>
+        <td class="text-right print-table-title">Phone</td>
+        <td colspan="3" id="billing_tel_no"></td>
+      </tr>
+      <tr>
+        <td class="text-right print-table-title">Email</td>
+        <td id="billing_email_address" colspan="3"></td>
+      </tr>
+      <tr>
+        <td class="text-right print-table-title">Payment PO</td>
+        <td id="payment_po" colspan="3"></td>
+      </tr>
+      <!-- COMMENTS / SPECIAL INSCRUCTIONS -->
+      <tr class="tr-title">
+        <td colspan="8">
+          <div class="grid-x">
+            <div class="cell section-div">
+              <p class="section-number">6</p>
+              <p class="section-title">COMMENTS / SPECIAL INSTRUCTIONS</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="text-left" id="comments"></td>
+        <td colspan="3" class="text-left" id="app_id" style="font-weight: bold; text-align: right; font-size: 1.2em;"></td>
+      </tr>
+      <tr>
+        <td colspan="8" class="text-left" id="filesDiv"></td>
+      </tr>
+    </tbody>
+    <tr>
+      <td colspan="8" style="text-align: right;"><b>Date Printed (local time): </b><span id="printDate"></span></td>
+    </tr>
+  </table>
+<div id='barcodetd' style='overflow: none;'></div>
+<div class="grid-x grid-container instructions">
+  <div class="cell">
+    <h5>INSTRUCTIONS:</h5>
+      <p>Include a printed copy of this form with your samples. A separate testing application
+        should be completed for each body style.<br>If you are only submitting documentation, please email a copy and your
+        app ID to the Customer Relations email address for the specific testing location, noted above.</p><br>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRF Dashboard</title>
+
+</head>
+<body>
+  <header class="hide-for-small-only" id="header"></header>
+  
+  <!-- MAIN CONTENT -->
+  <div class="content grid-x">
+    <div class="cell medium-1 sidebar" id="sidebar"></div>
+    <div class="cell medium-11" id="app"></div>
+    <a href="#0" class="scrollTop"></a>
+  </div>
+
+  <!------ FOOTER ROW ------>
+  <footer id="footer"></footer>
+
+  <!-- Auth Modal -->
+  <div class="reveal tiny" id="loginModal" data-reveal data-close-on-click="false" data-close-on-esc="false"></div>
+
+  <!-- Disposition Modal -->
+  <div class="reveal" id="dispositionModal" data-reveal data-animation-in="scale-in-up">
+    <div class="modal_title">
+      <h5>Disposition History</h5>
+      <h6 id="disposition-modal-title"></h6>
+    </div>
+    <div class="grid-x grid-margin-x">
+      <div class="cell">
+        <table>
+          <thead>
+            <tr>
+              <td>Status Date</td>
+              <td>Status</td>
+              <td>Lab Number</td>
+              <td>Express</td>
+              <td>Due Date</td>
+            </tr>
+          </thead>
+          <tbody id="disposition-modal-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  
+  <!-- Error Modal -->
+  <div class="reveal tiny modal-content no-padding" id="errorModal" data-reveal data-animation-in="scale-in-up"
+    data-animation-out="fade-out" data-options="closeOnClick:false;closeOnEsc:false;">
+    <div class="error" style="padding:1em;">
+      <h4 class="text-center">We're Sorry...</h4>
+    </div>
+    <div class="grid-x grid-padding-x p15">
+      <div class="cell text-center" id="errMsg"></div>
+    </div>
+    <div class="grid-x grid-padding-x after">
+      <div class="cell" id="errDiv">
+        <button class="button clear primary mb0 float-center" id="errOK" data-close> &nbsp; OK &nbsp; </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

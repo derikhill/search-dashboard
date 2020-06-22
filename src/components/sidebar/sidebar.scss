@@ -1,0 +1,38 @@
+@import '../../sass/base';
+
+.sidebar {
+  background-color: $sidebar;
+  min-height: calc(100% - 72px);
+  
+  .tabs {
+    border: none;
+    background-color: $sidebar;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 72px;
+  }
+
+  .tabs-title {
+    img {
+      fill: $icon-grey;
+      width: 64px;
+      padding: 1.25em 1.5em 1.25em 0.5em;
+      // padding-right: 0.5em;
+    }
+  } > a {
+    color: $icon-grey;
+    
+    &:focus,
+    &[aria-selected=true] {
+      color: $title-color
+    }
+    
+    img {
+      fill: $icon-grey;
+      width: 32px;
+      padding-right: 0.5em;
+    }
+
+  }
+
+}

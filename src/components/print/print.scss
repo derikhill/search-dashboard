@@ -1,0 +1,177 @@
+@import '../../sass/base';
+
+@page {
+  size: auto;/* auto is the initial value */
+  margin-top: 10mm;/* this affects the margin in the printer settings */
+  margin-bottom: 5mm;/* this affects the margin in the printer settings */
+  margin-left: 5mm;
+  margin-right: 5mm;
+}
+
+html {
+  background-color: #FFFFFF;
+  margin: 0px;/* this affects the margin on the html before sending to printer */
+}
+
+.top-Table {
+  border-collapse: collapse;
+  width: 1033px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #999;
+  table-layout: fixed;
+  white-space: normal;
+
+  caption {
+    font-weight: bold;
+    padding: 0;
+  }
+}
+
+td,
+th {
+  padding: 3px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.print-header {
+  margin-top: 1em;
+
+  img {
+    height: 4em;
+    width: 5em;
+    fill: $ul-red;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  #barcode {
+    height: 5rem;
+    width: 15rem;
+  }
+}
+
+.expresshd {
+  color: $ul-type-red;
+  margin-bottom: 0;
+}
+
+.address-table {
+  vertical-align: top;
+  text-align: right;
+  font-weight: bold;
+  padding: 0;
+
+  table {
+    margin-bottom: 0;
+  }
+
+  .sendto {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .bluestem-foot-address {
+    padding-left: 3rem;
+  }
+}
+
+.tr-title {
+  td {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.section-div {
+  background-color: $ul-blue;
+  color: $white;
+}
+
+.section-number {
+  display: inline-block;
+  background: $ul-blue-medium;
+  color: $white;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em 0.75em 1em;
+  margin-top: 0;
+}
+
+.section-title {
+  font-weight: bold;
+  margin: -3em 0 0.45em 3em;
+}
+
+.print-table-title {
+  font-weight: bold;
+}
+
+.green-cell {
+  background-color: $success;
+}
+
+.instructions {
+  margin-top: 2em;
+
+  p {
+    font-size: 8pt;
+  }
+}
+
+.small-appliance-sendto {
+  margin-top: 3em;
+}
+
+@media print {
+  body {
+    font-size: 70%;
+    margin: 0;
+  }
+
+  .editButton {
+    display: none;
+  }
+
+  .printLogo {
+    display: block;
+  }
+
+  #express {
+    color: $ul-type-red !important;
+  }
+
+  #addressRow {
+    .sendto {
+      font-size: 60%;
+      line-height: 1;
+    }
+  }
+
+  td,
+  th {
+    padding: 1px !important;
+  }
+
+  .section-div {
+    margin-bottom: 0;
+
+    .section-number {
+      padding: 0 1em 0.25em 1em;
+    }
+
+    .section-title {
+      font-size: 90%;
+      margin: -2.75em 0 0 3em;
+    }
+  }
+
+  .print-table-title {
+    padding-right: 0.6em;
+    font-weight: bold;
+  }
+}

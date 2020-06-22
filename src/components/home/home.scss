@@ -1,0 +1,51 @@
+@import '../../sass/base';
+
+.overview {
+  margin: 2rem;
+
+  .cell {
+    padding: 2rem;
+    background-color: $white;
+  }
+
+  .received {
+    color: rgba(66, 142, 206, 0.9);
+  }
+
+  .testing {
+    // color: rgba(224, 213, 0, 0.9);
+    color: rgba(23, 162, 184, 0.9)
+  }
+
+  .hold {
+    color: rgba(253, 126, 20, 0.9);
+  }
+
+  .completed {
+    color: $success;
+  }
+
+
+  .lab-table,
+  .destination {
+    margin-top: 2rem;
+
+    h5 {
+      border-bottom: 1px solid $icon-grey;
+      padding-top: 1rem;
+    }
+
+    // .color-bv {
+    //   color:#ab8ce4;
+    // }
+
+    // .color-hk {
+    //   color:#00c292;
+    // }
+  }
+
+  .destination > h5 {
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}

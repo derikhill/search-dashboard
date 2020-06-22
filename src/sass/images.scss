@@ -1,0 +1,83 @@
+.menu_item>svg {
+  height: 4.7em;
+  width: 4.7em;
+  background: $icon-grey;
+  fill: $white;
+}
+
+.sv1 {
+  margin-bottom: 10px;
+}
+
+.sv1:hover,
+.sv1.active {
+  border-bottom: 10px solid $ul-red;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.sv1:hover svg,
+.sv1.active svg {
+  background: $ul-red;
+  cursor: pointer;
+}
+
+.sv1:hover h6,
+.sv1.active h6 {
+  color: $ul-red;
+  cursor: pointer;
+}
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+}
+
+.svg-icon svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.svg-icon.svg-baseline svg {
+  bottom: -0.125em;
+  position: absolute;
+}
+
+.expander.is-active {
+  transform: rotate(180deg);
+}
+
+.check {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-delay: 2s;
+  animation: dash 6s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.entity_icons {
+  margin-left: 0.25em;
+  cursor: pointer;
+}
+
+a.scrollTop {
+  display: none;
+  width: 2em;
+  height: 2em;
+  position: fixed;
+  z-index: 999;
+  right: 2em;
+  bottom: 12em;
+  background: $ul-red url('../images/arrow-up.png') no-repeat 20% center;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}

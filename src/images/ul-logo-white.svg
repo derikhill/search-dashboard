@@ -1,0 +1,31 @@
+<svg id="ul-logo-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_269" data-name="Rectangle 269" class="cls-1" width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="Group_67" data-name="Group 67">
+    <g id="Group_64" data-name="Group 64" class="cls-2">
+      <path id="Path_505" data-name="Path 505" class="cls-3" d="M40,19.933A20,20,0,1,1,19.933,0,20.1,20.1,0,0,1,40,19.933M19.933,3.612A16.389,16.389,0,1,0,36.522,19.933,16.618,16.618,0,0,0,19.933,3.612" transform="translate(0 0)"/>
+    </g>
+    <g id="Group_65" data-name="Group 65" class="cls-2">
+      <path id="Path_506" data-name="Path 506" class="cls-3" d="M24.459,27.052H16.7V11.4h3.478V23.574h4.281Z" transform="translate(5.641 3.851)"/>
+    </g>
+    <g id="Group_66" data-name="Group 66" class="cls-2">
+      <path id="Path_507" data-name="Path 507" class="cls-3" d="M17.232,18.371c0,2.809-2.14,4.415-4.816,4.415S7.6,21.314,7.6,18.371V7h3.612V18.639a1.211,1.211,0,1,0,2.408,0V7h3.612Z" transform="translate(2.567 2.365)"/>
+    </g>
+  </g>
+</svg>
